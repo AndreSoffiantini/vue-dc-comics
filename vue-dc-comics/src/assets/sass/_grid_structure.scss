@@ -1,0 +1,13 @@
+.container {
+    margin: auto;
+    max-width: 1650px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-grow: 1;
+}
