@@ -36,7 +36,7 @@
             </div>
 
             <div class="col-20">
-              <img src="@/assets/img/buy-dc-power-visa.svg" alt="">
+              <img class="small-img" src="@/assets/img/buy-dc-power-visa.svg" alt="">
               <span>DC Power VISA</span>
             </div>
 
@@ -68,7 +68,7 @@ export default {
 
   .options_section {
     background-color: $primary;
-    padding: 3rem 0;
+    padding: 4rem 0;
     color: white;
     /* display: flex;
     align-items: center; */
