@@ -37,7 +37,6 @@ export default {
 
     header {
         height: 185px;
-        padding: 0 3rem;
     }
 
     nav {
