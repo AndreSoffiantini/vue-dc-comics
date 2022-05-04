@@ -7,18 +7,7 @@
                 </div>
 
                 <div class="col d-flex justify-end">
-                    <nav class="d-flex align-center unstyled-list h-100">
-                        <a href="">Characters</a>
-                        <a href="" class="active">Comics</a>
-                        <a href="">Movies</a>
-                        <a href="">Tv</a>
-                        <a href="">Games</a>
-                        <a href="">Collectibles</a>
-                        <a href="">Videos</a>
-                        <a href="">Fans</a>
-                        <a href="">News</a>
-                        <a href="">Shop</a>
-                    </nav>
+                    <Navbar/>
                 </div>
             </div>
         </div>
@@ -26,41 +15,21 @@
 </template>
 
 <script>
+
+import Navbar from '@/components/NavbarComponent.vue'
+
 export default {
-    name: 'HeaderComponent'
+    name: 'HeaderComponent',
+    components: {
+        Navbar
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 
-    @import '@/assets/sass/variables';
-
     header {
         height: 185px;
-    }
-
-    nav {
-        margin-left: -1rem;
-        margin-right: -1rem;
-
-        a {
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 600;
-            color: black;
-            margin: 0 1rem;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            border-bottom: 5px solid transparent;
-            
-            &.active {
-                color: $primary;
-                border-bottom-color: $primary;
-            }
-        }
-    }
-
-     
+    }     
 
 </style>
