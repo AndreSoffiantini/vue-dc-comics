@@ -3,13 +3,15 @@
 
       <Jumbotron/>
 
-      <section class="debug content_section">
+      <section class="comics_section">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <span>Content goes here</span>
-            </div>
-          </div>
+
+          <div class="primary-btn" id="current_series_btn" >Current series</div>
+
+          <Comics/>
+
+          <div class="primary-btn" id="load_more_btn">Load more</div>
+
         </div>
       </section>
 
@@ -19,14 +21,16 @@
 </template>
 
 <script>
-import Jumbotron from '@/components/JumbotronComponent'
+import Jumbotron from '@/components/JumbotronComponent';
+import Comics from '@/components/ComicsComponent';
 import Banner from '@/components/BannerComponent';
 
 export default {
     name: 'MainComponent',
     components: { 
       Banner,
-      Jumbotron
+      Jumbotron,
+      Comics
     }
 }
 </script>
@@ -35,13 +39,33 @@ export default {
 
 /* @import '@/assets/sass/variables'; */
 
-  .debug.content_section {
+  .comics_section {
     background-color: $secondary-dark;
-    color: white;
-    font-size: 200%;
-    display: flex;
-    align-items: center;
-    height: 200px;
+    padding-bottom: 2rem;
+    
+    .container {
+      position: relative;
+
+      .primary-btn {
+        background-color: $primary;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      #current_series_btn {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+        position: absolute;
+        transform: translate(-10px, -50%);
+      }
+
+      #load_more_btn {
+        width: fit-content;
+        margin: auto;
+        padding: 0.5rem 2rem;
+      }
+    }
   }
 
 </style>

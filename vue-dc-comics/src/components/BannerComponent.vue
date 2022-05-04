@@ -62,9 +62,10 @@ export default {
     .col-20 {
       display: flex;
       align-items: center;
+      justify-content: center;
 
       img {
-        max-height: 50px;
+        max-height: 75px;
       }
 
       span {

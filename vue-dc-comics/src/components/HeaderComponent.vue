@@ -29,7 +29,11 @@ export default {
 <style lang="scss" scoped>
 
     header {
-        height: 185px;
+        height: 150px;
+
+        img {
+            height: 90px;
+        }
     }     
 
 </style>
