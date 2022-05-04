@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '@/assets/sass/variables';
+/* @import '@/assets/sass/variables'; */
 
     .banner_section {
     background-color: $primary;

@@ -1,6 +1,8 @@
 <template>
     <main id="site_main">
 
+      <Jumbotron/>
+
       <section class="debug content_section">
         <div class="container">
           <div class="row">
@@ -17,19 +19,21 @@
 </template>
 
 <script>
-import Banner from '@/components/BannerComponent'
+import Jumbotron from '@/components/JumbotronComponent'
+import Banner from '@/components/BannerComponent';
 
 export default {
     name: 'MainComponent',
     components: { 
-      Banner
+      Banner,
+      Jumbotron
     }
 }
 </script>
 
 <style lang="scss" scoped>
 
-@import '@/assets/sass/variables';
+/* @import '@/assets/sass/variables'; */
 
   .debug.content_section {
     background-color: $secondary-dark;

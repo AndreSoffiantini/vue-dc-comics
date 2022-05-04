@@ -10,7 +10,7 @@ module.exports = defineConfig({
             // `scss` syntax requires an semicolon at the end of a statement, while `sass` syntax requires none
             // in that case, we can target the `scss` syntax separately using the `scss` option
             scss: {
-                additionalData: `@import "~@/assets/sass/_variables.scss";`
+                additionalData: `@import "@/assets/sass/_variables.scss";`
             }
         }
     }

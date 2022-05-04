@@ -59,7 +59,7 @@ export default {
 
 <style lang="scss" scoped>
 
-  @import '@/assets/sass/variables';
+  /* @import '@/assets/sass/variables'; */
 
   nav {
         margin-left: -1rem;

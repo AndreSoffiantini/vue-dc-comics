@@ -74,11 +74,7 @@
 
             <div class="socials col d-flex align-center">
               <h2>Follow Us</h2>
-              <img src="@/assets/img/footer-facebook.png" alt="">
-              <img src="@/assets/img/footer-facebook.png" alt="">
-              <img src="@/assets/img/footer-facebook.png" alt="">
-              <img src="@/assets/img/footer-facebook.png" alt="">
-              <img src="@/assets/img/footer-facebook.png" alt="">
+              <img v-for="item in socials" :key="item.id" :src="item.src" alt="">
             </div>
 
           </div>
@@ -91,13 +87,39 @@
 
 <script>
 export default {
-    name: 'HeaderComponent'
+    name: 'HeaderComponent',
+    data() {
+      return {
+        socials: [
+          {
+            id: 1,
+            src: require('@/assets/img/footer-facebook.png')
+          },
+          {
+            id: 2,
+            src: require('@/assets/img/footer-twitter.png')
+          },
+          {
+            id: 3,
+            src: require('@/assets/img/footer-youtube.png')
+          },
+          {
+            id: 4,
+            src: require('@/assets/img/footer-pinterest.png')
+          },
+          {
+            id: 5,
+            src: require('@/assets/img/footer-periscope.png')
+          },
+        ]
+      }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 
-  @import '@/assets/sass/variables';
+  /* @import '@/assets/sass/variables'; */
 
   h2 {
     text-transform: uppercase;
@@ -153,6 +175,7 @@ export default {
 
       img {
         margin: 0 1rem;
+
       }
 
     }

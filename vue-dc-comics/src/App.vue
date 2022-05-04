@@ -33,7 +33,7 @@ export default {
 
 @import '@/assets/sass/_common';
 @import '@/assets/sass/_utilities';
-@import '@/assets/sass/_variables';
+/* @import '@/assets/sass/_variables'; */
 @import '@/assets/sass/_grid_structure';
 
 </style>
