@@ -1,6 +1,6 @@
 <template>
     <nav class="d-flex align-center unstyled-list h-100">
-        <a v-for="(item,index) in navbar" v-bind:key="index" :class="item.active ? 'active' : ''">{{item.text}}</a>
+        <a href="#" v-for="(item,index) in navbar" v-bind:key="index" :class="item.active ? 'active' : ''">{{item.text}}</a>
     </nav>
 </template>
 
@@ -75,7 +75,7 @@ export default {
             display: flex;
             align-items: center;
             border-bottom: 5px solid transparent;
-            
+
             &.active {
                 color: $primary;
                 border-bottom-color: $primary;
