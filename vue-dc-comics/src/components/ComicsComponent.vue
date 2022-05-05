@@ -1,18 +1,22 @@
 <template>
     
     <div class="row">
-        <div class="col-2" v-for="(item, index) in comics" :key="index">
-            <img :src="item.thumb" :alt="item.series">           
-            <h4>{{item.series}}</h4>
-        </div>
+
+      <ComicCard :comic="item" v-for="item in comics" :key="item.series"/>;
+        
     </div>
 
 </template>
 
 <script>
 
+import ComicCard from "@/components/ComicCardComponent.vue"
+
 export default {
     name: 'ComicsComponent',
+    components: {
+      ComicCard
+    },
 
     data() {
         return {
@@ -100,26 +104,6 @@ export default {
     .row {
         padding: 2rem 0;
         margin: 0 -1rem;
-
-        .col-2 {
-                width: calc(2*100%/12 - 2rem);
-                margin: 1rem;
-
-                img {
-                    width: 100%;
-                    aspect-ratio: 1 / 1;
-                    object-fit: cover;
-                    object-position: top;
-                }
-
-                h4 {
-                    color: white;
-                    text-transform: uppercase;
-                    margin-top: 1rem;
-                }
-
-        }
-    
     } 
 
 </style>
