@@ -13,7 +13,7 @@
 import ComicCard from "@/components/ComicCardComponent.vue"
 
 export default {
-    name: 'ComicsComponent',
+    name: 'ComicsListComponent',
     components: {
       ComicCard
     },
